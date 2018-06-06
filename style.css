@@ -1,0 +1,188 @@
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+/*The Boxes picture*/
+#Boxes{
+
+	width: 100%;
+}
+
+/*The Orange Section Below Boxes Pictures*/
+.Orange{
+
+	background-color: #FB9A2D;
+	color: white;
+}
+
+.Orange-text{
+
+	margin-left: 6%;
+	font-size: 35px;
+}
+
+/*Button*/
+.btn{
+
+	font-size:30px;
+	margin-left: 10%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	padding: 0% 3% 0% 3%;
+}
+
+/*Tools Section*/
+#Tools{
+    display: block;
+    width: 100%;
+}
+
+
+#ToolsSection{
+	box-shadow: 1px 1px 2px 4px rgba(0,0,0,0.17);
+	border-radius: 10px;
+	color:#4D4D4D;
+}
+
+#ToolsSection p{
+
+	margin-left: 2%;
+	margin-right: 2%;
+	font-weight: bold;
+	color:#4D4D4D;
+	font-size: 35px;
+	margin-top: 2%;
+}
+
+/*Euro Section*/
+#Euro{
+	color: grey;
+	margin-left: 10%;
+}
+
+#Euro h1{
+color: #F76437;
+margin-left: 10%;
+
+}
+
+#Units{
+
+	margin-top: 1%;
+}
+
+/*View details Button*/
+#Details{
+
+	background-color: #FB9A2D;
+	color: white;
+	padding: 1%;
+	margin-left: 35%;
+	border-radius: 10px;
+ 	font-weight: bold;
+}
+
+/*Container*/
+.container{
+
+	margin-bottom: 4%;
+}
+
+/*Page Numbers Section*/
+.pageNumbers .pagination>li>a,
+.pageNumbers .pagination>li>span {
+  	border: 1px solid #FB9A2D;
+}
+
+.pagination>li>a{
+
+	color: 	#FB9A2D;
+	font-size: 22px;
+}
+
+.pagination>li.active>a {
+	background: #FB9A2D;
+	color: #fff;
+}
+
+.pageNumbers{
+	text-align: center;
+}
+
+#Footer{
+	color:	#4D4D4D;
+	margin-left: 3%;
+
+}
+
+
+#Footer h2,h1{
+	font-weight: bold;
+}
+
+
+/*Pop Up Buttons*/
+.modal-content .btn {
+	margin:0px;
+	margin-bottom:2%;
+
+}
+#Apply{
+
+	background: #FB9A2D;
+	color: white;
+	padding: 0% 30% 0% 30%;
+
+}
+
+#Cancel{
+
+	background: #6D747E;
+	color: white;
+	padding: 0% 29% 0% 30%;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    font-family:sans-serif;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

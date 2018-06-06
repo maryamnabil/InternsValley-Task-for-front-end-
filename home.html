@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link type="text/css" rel="stylesheet" href="style.css">	
+		<title>homepage</title>
+	</head>
+	<body>
+
+	<!--navbar Section-->
+		<nav class="navbar navbar-custom">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <b class="navbar-brand" style="font-size: 35px; color: black;" href="#">Brand</b>
+		    </div>
+		  </div>
+		</nav>
+
+	<!-- Boxes Section -->
+			
+	<img id="Boxes" src="images/Boxes.png" class="img-responsive">
+	<div class="Orange">
+		<div class="Orange-text">NEW LOTS POSTED DAILY. CLICK HERE TO GET NOTIFIED!</div>
+	</div>
+	
+	<!-- Filter Button-->
+	<button type="button" class="btn" id="myBtn">Filters</button>
+	
+	<!-- The Pop Up Section -->
+	<div id="myModal" class="modal">
+	  <!-- Pop Up content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <h3 style="font-weight: bold;">Category</h3>
+		<form action="" style="font-size: 20px;">
+		  <input type="radio"> Consumer Electronics<br>
+		  <input type="radio"> Home & Living<br>
+		  <input type="radio"> Children & Baby <br>
+		  <input type="radio"> Household <br>
+		</form>
+		<hr>
+	    <h3 style="font-weight: bold;">Condition</h3>
+		<form action="" style="font-size: 20px;">
+		  <input type="radio"> Unchecked<br>
+		  <input type="radio"> Like New<br>
+		  <input type="radio"> Used With Flaws <br>
+		  <input type="radio"> Defect <br>
+		  <input type="radio"> Mixed <br>  
+		</form>
+		<hr>
+	    <h3 style="font-weight: bold;">Price</h3>
+		<form action="" style="font-size: 20px;">
+		  <input " type="radio"> 0 € - 99 €<br>
+		  <input type="radio"> 100 € - 199 € <br>
+		  <input type="radio"> 200 € - 299 € <br>
+		  <input type="radio"> 300 € - 399 € <br>
+		  <input type="radio"> > 400 € <br>  
+		</form>
+	<br>
+		<div class="row" style="text-align: center;">
+			<button type="button" class="btn" id="Apply">Apply&nbsp;</button>
+			<button type="button" class="btn" id="Cancel">Cancel</button>
+	 	</div>
+	  </div>
+	</div>
+
+	<script>
+		// Get the Pop Up 
+		var modal = document.getElementById('myModal');
+
+		// Get the button that opens the pop up
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the pop up
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the Pop up window 
+		btn.onclick = function() {
+		    modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the Pop Up
+		span.onclick = function() {
+		    modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the Pop Up, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		}
+	</script>
+
+	<!--Tools First Section-->
+	<div class="container" id="ToolsSection">
+		<div class="row" >
+			<img  id="Tools" src="images/Tools.png" class="img-responsive">
+			<p>Patagonia Netgear Samsung Bulk Bla Viel Spielzeug Lorem Ipsum….</p>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3" id="Euro">
+				<br>
+				<h2><strike>399 <i class="fa fa-euro"></i></strike></h2>
+				<h1>289 <i class="fa fa-euro"></i></h1>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4" id="Unchecked">
+				<h2><img src="images/unchecked.jpg">Unchecked</h2>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3" id="Units">
+				<br>
+				<p>8 <span style="font-weight: initial;">Units</span>  </p>
+			</div>	
+
+		</div>
+		<div class="row">
+			<button type="button" class="btn col-lg-4 col-md-4 col-sm-4" id="Details">
+			View Details</button>
+		</div>
+	</div>
+
+
+	<!-- Second Tools Section -->
+	<div class="container" id="ToolsSection">
+		<div class="row" >
+			<img  id="Tools" src="images/Tools.png" class="img-responsive">
+			<p>Patagonia Netgear Samsung Bulk Bla Viel Spielzeug Lorem Ipsum….</p>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3" id="Euro">
+				<br>
+				<h2><strike>399 <i class="fa fa-euro"></i></strike></h2>
+				<h1>289 <i class="fa fa-euro"></i></h1>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4" id="Unchecked">
+				<h2><img src="images/used.jpg"> Used</h2>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3" id="Units">
+				<br>
+				<p>8 <span style="font-weight: initial;">Units</span></p>
+			</div>	
+
+		</div>
+		<div class="row">
+			<button type="button" class="btn col-lg-4 col-md-4 col-sm-4" id="Details">
+			View Details</button>
+		</div>
+	</div>
+
+
+	<!-- Third Tools Section -->
+	<div class="container" id="ToolsSection">
+		<div class="row" >
+			<img  id="Tools" src="images/Tools.png" class="img-responsive">
+			<p>Patagonia Netgear Samsung Bulk Bla Viel Spielzeug Lorem Ipsum….</p>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3" id="Euro">
+				<br>
+				<h2><strike>399 <i class="fa fa-euro"></i></strike></h2>
+				<h1>289 <i class="fa fa-euro"></i></h1>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4" id="Unchecked">
+				<h2><img src="images/Like.jpg"> Like Now</h2>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3" id="Units">
+				<br>
+				<p>8 <span style="font-weight: initial;">Units</span>  </p>
+			</div>	
+
+		</div>
+		<div class="row">
+			<button type="button" class="btn col-lg-4 col-md-4 col-sm-4" id="Details">View Details</button>
+		</div>
+	</div>
+
+	<!--Page Numbers Navigation -->
+	<div class="container">
+	  <div class="row">
+		  <div class="pageNumbers" >
+		    <nav>
+		      <ul class="pagination">
+		        <li class="active"><a href="#">1</a>
+		        </li>
+		        <li><a href="#">2</a>
+		        </li>
+		        <li><a href="#">3</a>
+		        </li>
+		        <li><a href="#">4</a>
+		        </li>
+		        <li><a href="#"> Next > </a>
+		        </li>
+		      </ul>
+		    </nav>
+		  </div>
+		  <!-- Footer Section -->
+		  <div clas="row" id="Footer">
+			  <h1>Brand</h1><br>
+			  <h2>Company</h2>
+			  <h3>  	
+				About Us <br>
+				Sign Up / Log In <br>
+				FAQ<br>
+			  </h3>	
+			  <h2>Information</h2>
+			  <h3>  	
+				Inventory Notifications<br>
+				Terms & Conditions <br>
+				Imprint<br>
+			  </h3>	
+			  <h2>Contact</h2>
+			  <h3>  	
+				b2b@brand.com<br>
+				skype: b2b_brand<br>
+			  </h3>	
+		  </div>
+	</div>
+  </body>
+</html>
